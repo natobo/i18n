@@ -1,6 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import JobsList from "./components/jobslist";
+import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(<JobsList />, document.getElementById("root"));
+import JobsList from "./components/jobslist";
+import LangWrapper from "./components/langWrapper";
+
+ReactDOM.render(
+    <LangWrapper>
+        <JobsList />
+    </LangWrapper>, document.getElementById("root")
+);
